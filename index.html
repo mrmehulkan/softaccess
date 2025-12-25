@@ -1,28 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="icon" href="assets/logo/favicon.png">
-  <meta charset="UTF-8">
-  <title>SoftAccess | Login</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body{ font-family:system-ui; background:#f1f5f9; display:flex; justify-content:center; align-items:center; height:100vh; margin:0; }
-    .box{ background:#fff; padding:30px; border-radius:15px; box-shadow:0 10px 25px rgba(0,0,0,0.1); width:100%; max-width:350px; text-align:center; }
-    input{ width:100%; padding:12px; margin:10px 0; border:1px solid #ddd; border-radius:8px; box-sizing:border-box; }
-    button{ width:100%; padding:12px; background:#0f172a; color:#fff; border:none; border-radius:8px; cursor:pointer; font-weight:bold; }
-    .error{ color:red; font-size:13px; margin-top:10px; }
-  </style>
+    <title>SoftAccess | Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
+    <style>body{display:flex;justify-content:center;align-items:center;height:100vh;margin:0;}</style>
 </head>
 <body>
-  <div class="box">
-    <img src="assets/logo/logo.png" height="50" alt="Logo">
-    <h2>Login</h2>
-    <input id="email" placeholder="Email or Mobile">
-    <input id="password" type="password" placeholder="Password">
-    <button onclick="loginUser()">Login</button>
-    <div id="msg" class="error"></div>
-    <p style="font-size:13px; margin-top:15px;">Naya account? <a href="signup.html">Signup yahan karein</a></p>
-  </div>
-  <script src="user.js"></script>
+    <div style="text-align:center; padding:20px; border:1px solid #ddd; border-radius:10px;">
+        <img src="assets/logo/logo.png" height="50">
+        <h2>SoftAccess Login</h2>
+        <input id="email" placeholder="Email or Mobile">
+        <input id="password" type="password" placeholder="Password">
+        <button onclick="loginUser()">Login</button>
+        <p id="msg" style="color:red;"></p>
+        <a href="signup.html">Naya account banayein</a>
+    </div>
+    <script src="user.js"></script>
 </body>
 </html>
