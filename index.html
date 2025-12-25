@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="assets/logo/favicon.png">
+    <meta charset="UTF-8">
+    <title>SoftAccess — Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
+    <style>
+        body { display: flex; justify-content: center; align-items: center; height: 100vh; background: #f1f5f9; }
+        .box { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); width: 100%; max-width: 350px; text-align: center; }
+        button { width: 100%; background: #0f172a; color: white; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="assets/logo/logo.png" height="50" alt="Logo">
+        <h2>Login</h2>
+        <input id="email" placeholder="Email or Mobile">
+        <input id="password" type="password" placeholder="Password">
+        <button onclick="loginUser()">Login</button>
+        <div id="msg" style="color:red; font-size: 13px; margin-top: 10px;"></div>
+        <p style="font-size: 13px;">Naya account? <a href="signup.html">Signup karein</a></p>
+    </div>
+    <script src="user.js"></script>
+</body>
+</html>
